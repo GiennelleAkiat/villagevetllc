@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village Vet LLC</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <!-- logo -->
+        <a href="../index.html" class="nav_logo"><img src="../images/village vet logo.png" alt="village Vet Logo"></a>
+        <div>
+            <a href="../about_us.html">About Us</a>
+            <a href="../services.html">Services</a>
+            <a href="../contact.html">Contact</a>
+            <a target="_blank" href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z/data=!3m1!4b1!4m6!3m5!1s0x3ef60bcb90f088f5:0xfb307b8802528c97!8m2!3d25.6820195!4d55.7797574!16s%2Fg%2F11h0c12cp7?hl=en&entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D">Find Us</a>
+            <a href="../contact.html#opening_hour">Opening Hours</a>
+            <a id="appointment_btn" href="../booking.html">Appointment</a>
+        </div>
+    </nav>
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const hamburger = document.getElementById("mobileHamburger");
+    const menu = document.getElementById("mobileMenu");
+
+    hamburger.addEventListener("click", () => {
+
+        hamburger.classList.toggle("active");
+        menu.classList.toggle("active");
+
+    });
+
+});
+</script>
+
+
+<!-- ================= MOBILE NAVBAR ================= -->
+<nav class="mobile-navbar">
+
+    <div class="mobile-navbar-top">
+
+        <a href="../index.html" class="mobile-logo">
+            <img src="../images/village vet logo.png" alt="Village Vet Logo">
+        </a>
+
+        <button class="mobile-hamburger" id="mobileHamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../about_us.html">About Us</a>
+        <a href="../services.html">Services</a>
+        <a href="../contact.html">Contact</a>
+        <a target="_blank"
+           href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">
+           Find Us
+        </a>
+        <a href="../contact.html#opening_hour">Opening Hours</a>
+
+        <a class="mobile-appointment-btn" href="booking.html">
+            Appointment
+        </a>
+    </div>
+
+</nav>
+
+
+
+
+    <!-- HERO -->
+    <section class="hero" style="background-image: url('../images/shop_bg.jpg'); display: flex;">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-title-wrapper">
+                <div class="hero-title">Grooming</div>
+            </div>
+            <a href="../booking.html?service=Grooming+Services" class="btn-orange hero-booking-btn">Booking</a>
+        </div>
+    </section>
+
+    <!-- DESCRIPTION -->
+    <section class="description">
+        <div class="container">
+            <h2 class="section-heading">Description</h2>
+            <p>Treat your pet to a day at the spa! All breeds have expert groomers,
+                baths deep cleaning nail trimming and ear cleaning services.
+                Your pet will come out looking great, smelling lovely and
+                feeling so comfortable.
+            </p>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works">
+        <div class="container how-flex">
+            <div class="how-image">
+                <img src="../images/shop.jpeg" alt="Pet Shop">
+            </div>
+            <div class="how-text">
+                <h2 class="section-heading">How It Works</h2>
+                <p>Check & consultation: We check what your choice of styling
+                     is and take a look over your pet coat for any mats
+                     or skin sensitivities. The Spa Session Your pet will
+                     receive a luxury wash using high quality, non toxic
+                     shampoos and a gentle blow-dry, styling and servicing.
+                     Fresh & Ready: We will notify you the moment your
+                     groomed pet is ready to walk out the office door!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-heading">Benefits</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Healthy Coat & Skin</h3>
+                    <p>Frequent washing & brushing avoids painful Matting and
+                        helps spread healthy natural oils.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Early health checks</h3>
+                    <p>Despite that, they also do early health checks as the groomers
+                        can already identify lumps, bumps or skin infections that
+                        these may be invisible to you.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Flexibility</h3>
+                    <p>Clean coat and trimmed nails allow maximal movement for your
+                        pet so that they can stay as cool, comfortable,
+                        and flexible as possible.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Decreased Shedding & Dander</h3>
+                    <p>Professional de-shedding treatments prevent unnecessary
+                        fur from getting trapped in your furnishings and declutter
+                        allergen levels within the residence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- MOBILE FOOTER -->
+<div class="footer-mobile">
+
+    <div class="footer__logo">
+        Village Vet LLC
+    </div>
+
+    <div class="footer__tag">
+        Your Pet's Best Friend
+    </div>
+
+    <nav class="footer__nav">
+        <a href="../services.html">Services</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../about_us.html">About Us</a>
+    </nav>
+
+    <div class="footer__copy">
+        © 2026 Village Vet LLC. All rights reserved.
+    </div>
+
+</div>
+
+<!-- DESKTOP FOOTER -->
+<div class="footer-desktop">
+
+    <footer>
+
+        <div class="foot-container footer-flex">
+
+            <div class="footer-logo">
+                <h1>Village Vet LLC</h1>
+                <span>Your Pet's Best Friend</span>
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="../about_us.html">About Us</a></li>
+
+                <li><a href="../services.html">Services</a></li>
+
+                <li>
+                    <a href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">
+                        Find Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../contact.html#opening_hour">
+                        Opening Hours
+                    </a>
+                </li>
+            </ul>
+
+            <div class="footer-right">
+
+                <div class="lang-switcher">
+
+                    <button class="lang-btn">
+                        <img src="https://flagcdn.com/w20/gb.png" alt="English">
+                        <span>EN</span>
+                    </button>
+
+                    <ul class="lang-dropdown">
+                        <li>
+                            <a href="#">
+                                <img src="https://flagcdn.com/w20/ae.png" alt="Arabic">
+                                Arabic (AR)
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <a href="../contact.html" class="btn-orange">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="bottom-bar">
+
+        <div class="foot-container bottom-flex">
+
+            <a href="../booking.html" class="btn-orange">
+                Book Appointment
+            </a>
+
+            <div class="footer-copy">
+                © 2026 Village Vet LLC. All rights reserved.
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

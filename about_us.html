@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/aboutus.css">
+    <link rel="stylesheet" href="css/clientTest.css">
+    <link rel="stylesheet" href="css/borders.css">
+
+    <title>Village Vet History</title>
+</head>
+<body>
+
+<div class="mobile-layout">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const hamburger = document.getElementById("mobileHamburger");
+            const menu = document.getElementById("mobileMenu");
+
+            hamburger.addEventListener("click", () => {
+
+                hamburger.classList.toggle("active");
+                menu.classList.toggle("active");
+
+            });
+
+        });
+    </script>
+
+
+    <!-- ================= MOBILE NAVBAR ================= -->
+    <nav class="mobile-navbar">
+
+        <div class="mobile-navbar-top">
+
+            <a href="index.html" class="mobile-logo">
+                <img src="images/village%20vet%20logo.png" alt="Village Vet Logo">
+            </a>
+
+            <button class="mobile-hamburger" id="mobileHamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="about_us.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a target="_blank"
+               href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">
+                Find Us
+            </a>
+            <a href="contact.html#opening_hour">Opening Hours</a>
+
+            <a class="mobile-appointment-btn" href="booking.html">
+                Appointment
+            </a>
+        </div>
+
+    </nav>
+
+
+    <section class="team">
+        <p class="section-label" style="color:#888;">
+            <br>
+            <br>
+            Who we are</p>
+        <h2 class="section-title">Meet <span>The Team</span></h2>
+        <div class="divider"></div>
+
+        <div class="team-main">
+            <div class="team-card">
+                <div class="team-card__header">
+                    <img class="team-card__photo" src="images/staff/omer.jpg" alt="Dr Omer Kutubi"/>
+                    <div class="team-card__info">
+                        <div class="team-card__name">Dr Omer Kutubi</div>
+                        <div class="team-card__creds">CEO, BVMCh, Msc, RCVS,<br>MAVMA, MBSAVA, MBMUS</div>
+                    </div>
+                    <a href="#doctor-omer" class="team-card__arrow">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2.5">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-card__header">
+                    <img class="team-card__photo" src="images/staff/dr_aqib.jpg" alt="Dr Aqib Malik"/>
+                    <div class="team-card__info">
+                        <div class="team-card__name">Dr Aqib Malik</div>
+                        <div class="team-card__creds">DVM, Msc</div>
+                    </div>
+                    <a href="#doctor-aqib" class="team-card__arrow">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2.5">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-card__header">
+                    <img class="team-card__photo" src="images/staff/mary.jpeg" alt="Mary"/>
+                    <div class="team-card__info">
+                        <div class="team-card__name">Mary</div>
+                        <div class="team-card__creds">Head Nurse</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-support">
+            <div class="support-card">
+                <img class="support-card__photo" src="images/staff/p-anne.jpeg" alt="P-anne"/>
+                <div class="support-card__name">P-anne</div>
+                <div class="support-card__role">Clinic Manager</div>
+            </div>
+            <div class="support-card">
+                <img class="support-card__photo" src="images/staff/nhuel.jpeg" alt="Nhuel"/>
+                <div class="support-card__name">Nhuel</div>
+                <div class="support-card__role">Nurse Assistant</div>
+            </div>
+            <div class="support-card">
+                <img class="support-card__photo" src="images/staff/jay.jpeg" alt="Jay"/>
+                <div class="support-card__name">Jay</div>
+                <div class="support-card__role">Groomer</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <p class="section-label">What clients say</p>
+        <h2 class="section-title"><span>Client</span> Testimonials</h2>
+        <div class="divider"></div>
+
+        <div class="testimony-container mobile-testimony-container">
+            <div class="testimony-card-carousel mobile-testimony-carousel">
+                <div class="card">
+                    <div class="client-image-container">
+                        <img src="images/anon-pfp.jpg" alt="Omran Alblooshi"/>
+                    </div>
+                    <h3>Omran Alblooshi</h3>
+                    <p>I used to take my two cats to an expensive vet in AD that charged me incredibly high and treated
+                        my cats with a lot of things, but Village Vet gave us amazing care at a fair price. Highly
+                        recommend!</p>
+                </div>
+                <div class="card">
+                    <div class="client-image-container">
+                        <img src="images/anon-pfp.jpg" alt="Anna Burenko"/>
+                    </div>
+                    <h3>Anna Burenko</h3>
+                    <p>Dr. Kutubi is very professional with kindest heart ever AMAZING DOCTOR!!! The team is great too!
+                        Me and my cat super happy! Highly recommended!!! BEST VET CLINIC!!!</p>
+                </div>
+                <div class="card">
+                    <div class="client-image-container">
+                        <img src="images/anon-pfp.jpg" alt="Noora Muhammad"/>
+                    </div>
+                    <h3>Noora Muhammad</h3>
+                    <p>After a really bad experience with another vet, Dr. Omar literally saved my rabbit's life. He's
+                        very professional and good with pets. They also have the nicest and most polite staff.</p>
+                </div>
+                <div class="card">
+                    <div class="client-image-container">
+                        <img src="images/anon-pfp.jpg" alt="Nasir Jabbar"/>
+                    </div>
+                    <h3>Nasir Jabbar</h3>
+                    <p>The entire staff is very friendly and helpful. Dr. Omer is a thorough gentleman and an angel in
+                        Doctor disguise.</p>
+                </div>
+            </div>
+            <a href="#" class="visuallyhidden card-controller-mobile">Carousel controller</a>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="about" id="about">
+        <p class="section-label">Our story</p>
+        <h2 class="section-title"><span>About</span> Us</h2>
+        <div class="divider"></div>
+
+        <div class="about__mission">
+            <span class="about__mission-label">Our Mission</span>
+            <p class="about__mission-text">Our mission is to provide our clients with the very best in pet
+                healthcare.</p>
+        </div>
+
+        <img class="about__photo" src="images/Village%20Vet%20Gallery%20Pictures/front_1.webp"
+             alt="Village Vet Clinic"/>
+
+        <div class="about__body">
+            <p>Village Vet LLC Veterinary Clinic was established In 2016 in Northern Emirates in UAE, Ras al Khaimah city. The clinic is located in the attractive area of Al Hamra close to Al Hamra Mall. It comprehensive veterinary services, a “one-stop-shop“ for all of your veterinary requirements.
+        <span id="about-dots">...</span><span id="about-more"> Our facility includes a well stocked Pharmacy, state of the Art Surgery theatre, In-House X-ray and Ultrasound, Endoscopy, and soon fluoroscopy diagnostics, for pets that needs medical care, we provide in house hospitalization facility. We also provide the latest of diagnostic procedures through in-house testing.
+The services and facilities we provide range from routine preventative care for young healthy pets, early detection and treatment of diseases as your pet ages, and complete medical and surgical care throughout a pet’s lifetime. All this brought by our team with a caring passion towards animals and a wealth of experience to the practice with individually obtained high standards of professional qualifications.
+We are committed to providing a personal approach to all concerns to every pet individually.</span></p>
+        </div>
+
+        <button class="about__read-more" id="about-btn" onclick="readMore('about-dots','about-more','about-btn')">Read
+            more
+        </button>
+    </section>
+
+    <!-- EMERGENCY BANNER -->
+    <div class="emergency">
+        <p>For emergency services we provide 24/7 ER services through our emergency hotline.</p>
+        <a href="tel:+97150561420787">00971 (0) 561420787</a>
+    </div>
+
+    <!-- THE DOCTORS -->
+    <section class="doctors" id="doctors">
+        <p class="section-label">Our specialists</p>
+        <h2 class="section-title"><span>The</span> Doctors</h2>
+        <div class="divider"></div>
+
+        <!-- Dr Omer -->
+        <div class="doctor-card" id="doctor-omer">
+            <div class="doctor-card__top">
+                <div>
+                    <div class="doctor-card__name">Dr Omer Kutubi</div>
+                    <div class="doctor-card__creds">BVMCh, Msc, RCVS, MAVMA, MBSAVA, MBMUS</div>
+                </div>
+                <img class="doctor-card__photo" src="images/Village%20Vet%20Gallery%20Pictures/dr_omer.webp"
+                     alt="Dr Omer Kutubi"/>
+            </div>
+            <div class="doctor-card__body">
+                <p>Dr. Omer Kutubi is a distinguished veterinarian and the visionary founder of Village Vet LLC. His illustrious career in veterinary medicine began with his graduation from Mosul University in 1992, marking the inception of his journey towards excellence in the field. Dr. Omer’s commitment to continuous learning and professional growth led him to pursue specialized training at the Royal College of Veterinary Surgeons (RCVS) in the UK, where he honed his skills and deepened his expertise.
+          <span id="omer-dots">...</span><span id="omer-more">
+            <br> <br>
+            In 2009, driven by his passion for knowledge and innovation, Dr. Omer attained a Master’s degree in Advanced Immunohaematology from Cardiff University, a testament to his dedication to staying at the forefront of veterinary science. Eager to explore new horizons, he made the pivotal decision to relocate to the United Arab Emirates in 2010, where he contributed his talents to esteemed clinics in Dubai, earning a reputation for his prowess in advanced surgery, orthopedics, diagnostic imaging, and internal medicine.
+            <br> <br>
+            In 2016, guided by his vision of providing top-tier veterinary care to the community, Dr. Omer established Village Vet LLC, a beacon of excellence in the field. Since its inception, Village Vet LLC has been a cornerstone of compassionate and comprehensive care for pets, reflecting Dr. Omer’s unwavering dedication to his profession and his commitment to serving both animals and their human companions.
+            <br> <br>
+            Beyond his professional endeavors, Dr. Omer finds joy and relaxation in various hobbies, including indulging in music, immersing himself in movies, cycling for recreation, and cherishing the company of his beloved pets, Coco and Cruze. These pastimes not only enrich his life but also reflect his vibrant personality and his ability to find balance amid his demanding schedule.
+            <br> <br>
+            As the esteemed CEO of Village Vet LLC, Dr. Omer Kutubi continues to shape the landscape of veterinary care with his expertise, compassion, and unwavering dedication to the well-being of animals. His multifaceted background, relentless pursuit of knowledge, and genuine love for his work embody the essence of a true leader in the field of veterinary medicine.</span></p>
+            </div>
+            <button class="doctor-card__read-more" id="omer-btn" onclick="readMore('omer-dots','omer-more','omer-btn')">
+                Read more
+            </button>
+        </div>
+
+        <!-- Dr Aqib -->
+        <div class="doctor-card" id="doctor-aqib">
+            <div class="doctor-card__top">
+                <div>
+                    <div class="doctor-card__name">Dr. Aqib Malik</div>
+                    <div class="doctor-card__creds">DVM, Msc</div>
+                </div>
+                <img class="doctor-card__photo" src="images/staff/dr_aqib.jpg" alt="Dr Aqib Malik"/>
+            </div>
+            <div class="doctor-card__body">
+                <p>Dr. Aqib Malik is a qualified veterinarian with a passion for surgery and internal medicine. He earned his veterinary degree from RIPHAH University, College of Veterinary Sciences in 2017. Dr. Aqib’s love for animals led him to pursue further education, obtaining a Master’s degree in Veterinary Internal Medicine in 2020.
+          <span id="aqib-dots">...</span><span id="aqib-more">
+         <br> <br>
+         After completing his education, Dr. Aqib gained experience working in various clinics in Pakistan. His time in different settings allowed him to develop skill set and a understanding of veterinary care.
+         <br> <br>
+         In 2022, Dr. Aqib joined Village Vet LLC, where he continues to provide care to animals in need. His focus on surgery and internal medicine has enabled him to make a impact on the well-being of his patients. Dr. Aqib is dedicated to staying current with the latest advancements in veterinary medicine to ensure that he provides the best possible care to every animal he treats. In his free time, Dr. Aqib enjoys spending time with pets and exploring new ways to improve his skills as a veterinarian.
+          </span></p>
+            </div>
+            <button class="doctor-card__read-more" id="aqib-btn" onclick="readMore('aqib-dots','aqib-more','aqib-btn')">
+                Read more
+            </button>
+        </div>
+    </section>
+
+    <!-- MOBILE FOOTER -->
+    <div class="footer-mobile">
+
+        <div class="footer__logo">
+            Village Vet LLC
+        </div>
+
+        <div class="footer__tag">
+            Your Pet's Best Friend
+        </div>
+
+        <nav class="footer__nav">
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="about_us.html">About Us</a>
+        </nav>
+
+        <div class="footer__copy">
+            © 2026 Village Vet LLC. All rights reserved.
+        </div>
+
+    </div>
+
+    <script>
+        function readMore(dotsId, moreId, btnId) {
+            var dots = document.getElementById(dotsId);
+            var more = document.getElementById(moreId);
+            var btn = document.getElementById(btnId);
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                more.style.display = "none";
+                btn.textContent = "Read more";
+            } else {
+                dots.style.display = "none";
+                more.style.display = "inline";
+                btn.textContent = "Read less";
+            }
+        }
+
+        // hide all "more" spans on load
+        document.querySelectorAll('[id$="-more"]').forEach(function (el) {
+            el.style.display = "none";
+        });
+    </script>
+
+</div>
+
+
+<!-- ==================== DESKTOP VERSION ==================== -->
+
+<!-- use div and PADDING 100 ABOVE so it does not overlay nav bar ;3 -->
+<div class="desktop-layout">
+
+    <!-- DESKTOP NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="nav_logo">
+            <img src="images/village%20vet%20logo.png" alt="Village Vet Logo">
+        </a>
+
+        <div>
+            <a href="about_us.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+
+            <a target="_blank"
+               href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">
+                Find Us
+            </a>
+
+            <a href="contact.html#opening_hour">
+                Opening Hours
+            </a>
+
+            <a id="appointment_btn" href="booking.html">
+                Appointment
+            </a>
+        </div>
+    </nav>
+
+
+    <!--------------------------------MEET THE TEAM-->
+    <div class="meet_team">
+        <hr style="background-color: white;">
+        <h2><em style="-webkit-text-stroke: 2px white;">MEET</em> THE TEAM</h2>
+
+        <div class="meet_team_container">
+            <!-- DOC CARDS -->
+            <div class="doc_card">
+                <img src="images/staff/omer.jpg"/>
+                <div class="doc_card_desc">
+                    <h3>Dr Omer Kutubi</h3>
+                    <p>CEO, BVMCh, Msc, RCVS, MAVMA, MBSAVA, MBMUS</p>
+                    <a href="#dr_omer" class="btn-jump-dr">&gt;</a>
+                </div>
+
+            </div>
+
+            <div class="doc_card">
+                <img src="images/staff/dr_aqib.jpg"/>
+                <div class="doc_card_desc">
+                    <h3>Dr Aqib Malik</h3>
+                    <p>DVM, Msc</p>
+                    <a href="#dr_aqib" class="btn-jump-dr">&gt;</a>
+                </div>
+            </div>
+
+            <!-- NURSE CARDS -->
+            <div class="nurse_card" id="mary">
+                <img src="images/staff/mary.jpeg"/>
+                <div class="nurse_services">
+                    <img class="service_icon" src="images/icons/diagnostic.png"/>
+                    <img class="service_icon" src="images/icons/puppy.png"/>
+                    <img class="service_icon" src="images/icons/laboratory.png"/>
+                </div>
+                <div class="nurse_card_desc">
+                    <h3>Mary</h3>
+                    <p>Head Nurse</p>
+                </div>
+            </div>
+
+            <div class="nurse_card">
+                <img src="images/staff/p-anne.jpeg"/>
+                <div class="nurse_services">
+                    <img class="service_icon" src="images/icons/dentistry.png"/>
+                <img class="service_icon" src="images/icons/meds.png"/>
+                </div>
+                <div class="nurse_card_desc">
+                    <h3>P-anne</h3>
+                    <p>Clinic Manager</p>
+                </div>
+            </div>
+            <div class="nurse_card">
+                <img src="images/staff/nhuel.jpeg"/>
+                <div class="nurse_services">
+                    <img class="service_icon" src="images/icons/microchipping.png"/>
+                <img class="service_icon" src="images/icons/surgeries.png"/>
+                </div>
+                <div class="nurse_card_desc">
+                    <h3>Nhuel</h3>
+                    <p>Nurse Assistant</p>
+                </div>
+            </div>
+            <div class="nurse_card">
+                <img src="images/staff/jay.jpeg"/>
+                <div class="nurse_services">
+                    <img class="service_icon" src="images/icons/grooming.png"/>
+                </div>
+                <div class="nurse_card_desc">
+                    <h3>Jay</h3>
+                    <p>Groomer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------CLIENT TESTIMONIALS-->
+    <div class="client_testimonials">
+
+        <div id="client_header">
+            <img src="images/client_test_quote.png"/>
+            <div>
+                <hr>
+                <h2><em>CLIENT</em><br>TESTIMONIALS</h2>
+            </div>
+        </div>
+
+        <div class="testimony-container">
+            <div class="testimony-card-carousel">
+                <div class="card">
+                    <div class="client-image-container">
+                        <img src="images/anon-pfp.jpg">
+                    </div>
+                    <h3>Omran Alblooshi</h3>
+                    <p>I used to take my two cats to an expensive vet in AD that charged me incredibly high and treated
+                        my cats with a lot of things</p>
+                </div>
+                <div class="card">
+                    <div class="client-image-container">
+                        <img src="images/anon-pfp.jpg">
+                    </div>
+                    <h3>Anna Burenko</h3>
+                    <p>Dr. Kutubi is very professional with kindest heart ever AMAZING DOCTOR!!! The team is great
+                        too:)! Me and my cat super happy! Highly recommended!!! BEST VET CLINIC!!!</p>
+                </div>
+                <div class="card">
+                    <div class="client-image-container">
+                        <img src="images/anon-pfp.jpg">
+                    </div>
+                    <h3>Noora Muhammad</h3>
+                    <p>After a really bad experience with another vet that left my rabbit in a really bad condition, dr
+                        Omar literally saved his life. He’s very professional and good with pets. Pikachu is healthier
+                        than ever all thanks to him. They also have the nicest and the most polite staff.</p>
+                </div>
+                <div class="card">
+                    <div class="client-image-container">
+                        <img src="images/anon-pfp.jpg">
+                    </div>
+                    <h3>Nasir Jabbar</h3>
+                    <p>The entire staff is very friendly and very helpful, especially the staff on reception, they are
+                        very courteous and professional. And above all Dr. Omer is a thorough gentleman and an angel in
+                        Doctor disguise.</p>
+                </div>
+            </div>
+            <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+        </div>
+    </div>
+
+    <!--------------------------------ABOUT US-->
+    <div class="about_us">
+        <div id="about_us_header">
+            <div>
+                <hr>
+                <h2><em>ABOUT</em> US</h2>
+            </div>
+
+            <div id="mission">
+                <h2><em>OUR</em><br>MISSION</h2>
+                <p>Our mission is to provide our clients with the very best in pet healthcare.</p>
+            </div>
+        </div>
+
+        <div class="about_us_desc">
+            <img src="images/Village%20Vet%20Gallery%20Pictures/front_1.webp"/>
+            <p>Village Vet LLC Veterinary Clinic was established In 2016 in Northern Emirates in UAE, Ras al Khaimah
+                city. The clinic is located in the attractive area of Al Hamra close to Al Hamra Mall. It comprehensive
+                veterinary services, a “one-stop-shop“ for all of your veterinary requirements. <br><br>
+                Our facility includes a well stocked Pharmacy, state of the Art Surgery theatre, In-House X-ray and
+                Ultrasound, Endoscopy, and soon fluoroscopy diagnostics, for pets that needs medical care, we provide in
+                house hospitalization facility. We also provide the latest of diagnostic procedures through in-house
+                testing.<br><br>
+                The services and facilities we provide range from routine preventative care for young healthy pets,
+                early detection and treatment of diseases as your pet ages, and complete medical and surgical care
+                throughout a pet’s lifetime. All this brought by our team with a caring passion towards animals and a
+                wealth of experience to the practice with individually obtained high standards of professional
+                qualifications.<br><br>
+                We are committed to providing a personal approach to all concerns to every pet individually.</p>
+        </div>
+
+        <div class="emergency_contact">
+            <p>For emergency services we provide 24/7 ER services through our emergency hotline.</p>
+            <p id="emergency_num">00971 (0) 561420787.</p>
+        </div>
+    </div>
+
+    <!--------------------------------ABOUT DR OMER-->
+    <div class="dr_omer" id="dr_omer">
+        <div class="dr_header">
+            <hr>
+            <h2>Dr Omer Kutubi</h2>
+            <br>
+            <p>BVMCh, Msc, RCVS, MAVMA, MBSAVA, MBMUS</p>
+        </div>
+
+        <div id="dr_omer_desc_1">
+            <img src="images/Village%20Vet%20Gallery%20Pictures/dr_omer.webp"/>
+            <p>Dr. Omer Kutubi is a distinguished veterinarian and the visionary founder of Village Vet LLC. His
+                illustrious career in veterinary medicine began with his graduation from Mosul University in 1992,
+                marking the inception of his journey towards excellence in the field. Dr. Omer’s commitment to
+                continuous learning and professional growth led him to pursue specialized training at the Royal College
+                of Veterinary Surgeons (RCVS) in the UK, where he honed his skills and deepened his expertise.<br><br>
+                In 2009, driven by his passion for knowledge and innovation, Dr. Omer attained a Master’s degree in
+                Advanced Immunohaematology from Cardiff University, a testament to his dedication to staying at the
+                forefront of veterinary science. Eager to explore new horizons, he made the pivotal decision to relocate
+                to the United Arab Emirates in 2010, where he contributed his talents to esteemed clinics in Dubai,
+                earning a reputation for his prowess in advanced surgery, orthopedics, diagnostic imaging, and internal
+                medicine.</p>
+        </div>
+
+        <div id="dr_omer_desc_2">
+            <img src="images/chair.jpg"/>
+            <p>In 2016, guided by his vision of providing top-tier veterinary care to the community, Dr. Omer
+                established Village Vet LLC, a beacon of excellence in the field. Since its inception, Village Vet LLC
+                has been a cornerstone of compassionate and comprehensive care for pets, reflecting Dr. Omer’s
+                unwavering dedication to his profession and his commitment to serving both animals and their human
+                companions.<br><br>
+                Beyond his professional endeavors, Dr. Omer finds joy and relaxation in various hobbies, including
+                indulging in music, immersing himself in movies, cycling for recreation, and cherishing the company of
+                his beloved pets, Coco and Cruze. These pastimes not only enrich his life but also reflect his vibrant
+                personality and his ability to find balance amid his demanding schedule.<br><br>
+                As the esteemed CEO of Village Vet LLC, Dr. Omer Kutubi continues to shape the landscape of veterinary
+                care with his expertise, compassion, and unwavering dedication to the well-being of animals. His
+                multifaceted background, relentless pursuit of knowledge, and genuine love for his work embody the
+                essence of a true leader in the field of veterinary medicine.</p>
+        </div>
+    </div>
+
+    <!--------------------------------ABOUT DR AQIB-->
+    <div class="dr_aqib" id="dr_aqib">
+        <div class="dr_header">
+            <hr>
+            <h2>Dr Aqib Malik</h2>
+            <br>
+            <p>BVMCh, Msc, RCVS, MAVMA, MBSAVA, MBMUS</p>
+        </div>
+
+        <div id="dr_aqib_desc">
+            <img src="images/staff/dr_aqib.jpg"/>
+            <p>Dr. Aqib Malik is a qualified veterinarian with a passion for surgery and internal medicine. He earned
+                his veterinary degree from RIPHAH University, College of Veterinary Sciences in 2017. Dr. Aqib’s love
+                for animals led him to pursue further education, obtaining a Master’s degree in Veterinary Internal
+                Medicine in 2020. After completing his education, Dr. Aqib gained experience working in various clinics
+                in Pakistan. His time in different settings allowed him to develop skill set and a understanding of
+                veterinary care.<br><br>
+                In 2022, Dr. Aqib joined Village Vet LLC, where he continues to provide care to animals in need. His
+                focus on surgery and internal medicine has enabled him to make a impact on the well-being of his
+                patients. Dr. Aqib is dedicated to staying current with the latest advancements in veterinary medicine
+                to ensure that he provides the best possible care to every animal he treats. In his free time, Dr. Aqib
+                enjoys spending time with pets and exploring new ways to improve his skills as a veterinarian.</p>
+        </div>
+
+    </div>
+    <!-- DESKTOP FOOTER -->
+    <div class="footer-desktop">
+
+        <footer>
+
+            <div class="foot-container footer-flex">
+
+                <div class="footer-logo">
+                    <h1>Village Vet LLC</h1>
+                    <span>Your Pet's Best Friend</span>
+                </div>
+
+                <ul class="footer-links">
+                    <li><a href="about_us.html">About Us</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li>
+                        <a href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">
+                            Find Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html#opening_hour">
+                            Opening Hours
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="footer-right">
+
+                    <div class="lang-switcher">
+
+                        <button class="lang-btn">
+                            <img src="https://flagcdn.com/w20/gb.png" alt="English">
+                            <span>EN</span>
+                        </button>
+
+                        <ul class="lang-dropdown">
+                            <li>
+                                <a href="#">
+                                    <img src="https://flagcdn.com/w20/ae.png" alt="Arabic">
+                                    Arabic (AR)
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <a href="contact.html" class="btn-orange">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        <div class="bottom-bar">
+
+            <div class="foot-container bottom-flex">
+
+                <a href="booking.html" class="btn-orange">
+                    Book Appointment
+                </a>
+
+                <div class="footer-copy">
+                    © 2026 Village Vet LLC. All rights reserved.
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="javascript/carousel-common.js"></script>
+    <script src="javascript/client-test-carousel.js"></script>
+
+</div>
+
+</body>
+</html>

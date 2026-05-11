@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/borders.css">
+    <title>Village Vet Services</title>
+</head>
+<body>
+
+    <!-- DESKTOP NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="nav_logo"><img src="images/village%20vet%20logo.png" alt="Village Vet Logo"></a>
+        <div>
+            <a href="about_us.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a target="_blank" href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">Find Us</a>
+            <a href="contact.html#opening_hour">Opening Hours</a>
+            <a id="appointment_btn" href="booking.html">Appointment</a>
+        </div>
+    </nav>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const hamburger = document.getElementById("mobileHamburger");
+    const menu = document.getElementById("mobileMenu");
+
+    hamburger.addEventListener("click", () => {
+
+        hamburger.classList.toggle("active");
+        menu.classList.toggle("active");
+
+    });
+
+});
+</script>
+
+
+<!-- ================= MOBILE NAVBAR ================= -->
+<nav class="mobile-navbar">
+
+    <div class="mobile-navbar-top">
+
+        <a href="index.html" class="mobile-logo">
+            <img src="images/village%20vet%20logo.png" alt="Village Vet Logo">
+        </a>
+
+        <button class="mobile-hamburger" id="mobileHamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="about_us.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a target="_blank"
+           href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">
+           Find Us
+        </a>
+        <a href="contact.html#opening_hour">Opening Hours</a>
+
+        <a class="mobile-appointment-btn" href="booking.html">
+            Appointment
+        </a>
+    </div>
+
+</nav>
+
+
+    <!-- PAGE CONTENT -->
+    <div class="m_service_container">
+        <div class="m_service_content">
+
+            <!-- section 1 -->
+            <div>
+                <h1><span class="section_dash">——</span> Preventive &amp; General Wellness</h1>
+                <div class="m_IwIllGoCrAzY">
+                    <a href="service_pages/vaccination.html"><div class="m_service_image"><img src="images/icons/vaccination.png"><p>Vaccination</p><span class="m_icon">L</span></div></a>
+                    <a href="service_pages/microchipping.html"><div class="m_service_image"><img src="images/icons/microchipping.png"><p>Microchipping</p><span class="m_icon">U</span></div></a>
+                    <a href="service_pages/consultation.html"><div class="m_service_image"><img src="images/icons/puppy.png"><p>Consultation</p><span class="m_icon">V</span></div></a>
+                </div>
+            </div>
+
+            <!-- section 2 -->
+            <div>
+                <h1><span class="section_dash">——</span> Medical &amp; Diagnostic Services</h1>
+                <div class="m_IwIllGoCrAzY">
+                    <a href="service_pages/laboratory.html"><div class="m_service_image"><img src="images/icons/laboratory.png"><p>Laboratory Test</p><span class="m_icon">Y</span></div></a>
+                    <a href="service_pages/diagnostic_imaging.html"><div class="m_service_image"><img src="images/icons/diagnostic.png"><p>Diagnostic Imaging</p><span class="m_icon">O</span></div></a>
+                    <a href="service_pages/dentistry.html"><div class="m_service_image"><img src="images/icons/dentistry.png"><p>Dentistry</p><span class="m_icon">U</span></div></a>
+                </div>
+            </div>
+
+            <!-- section 3 -->
+            <div>
+                <h1><span class="section_dash">——</span> Surgical &amp; Specialized Care</h1>
+                <div class="m_IwIllGoCrAzY">
+                    <a href="service_pages/surgeries.html"><div class="m_service_image"><img src="images/icons/surgeries.png"><p>Surgeries &amp; Orthopedic</p><span class="m_icon">Y</span></div></a>
+                    <a href="service_pages/hospitalization.html"><div class="m_service_image"><img src="images/icons/hospital.png"><p>Hospitalization &amp; Boarding</p><span class="m_icon">O</span></div></a>
+                </div>
+            </div>
+
+            <!-- section 4 -->
+            <div>
+                <h1><span class="section_dash">——</span> Pet Lifestyle &amp; Essentials</h1>
+                <div class="m_IwIllGoCrAzY">
+                    <a href="service_pages/grooming.html"><div class="m_service_image"><img src="images/icons/grooming.png"><p>Grooming Services</p><span class="m_icon">Y</span></div></a>
+                    <a href="service_pages/accessory_shop.html"><div class="m_service_image"><img src="images/icons/treats.png"><p>Pet Food &amp; Accessory Shop</p><span class="m_icon">O</span></div></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- DESKTOP FOOTER -->
+    <div class="footer-desktop">
+        <footer>
+            <div class="foot-container footer-flex">
+                <div class="footer-logo">
+                    <h1>Village Vet LLC</h1>
+                    <span>Your Pet's Best Friend</span>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">Find Us</a></li>
+                    <li><a href="contact.html#opening_hour">Opening Hours</a></li>
+                </ul>
+                <div class="footer-right">
+                    <div class="lang-switcher">
+                        <button class="lang-btn">
+                            <img src="https://flagcdn.com/w20/gb.png" alt="English">
+                            <span>EN</span>
+                        </button>
+                        <ul class="lang-dropdown">
+                            <li><a href="#"><img src="https://flagcdn.com/w20/ae.png" alt="Arabic"> Arabic (AR)</a></li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn-orange">Contact</a>
+                </div>
+            </div>
+        </footer>
+        <div class="bottom-bar">
+            <div class="foot-container bottom-flex">
+                <a href="booking.html" class="btn-orange">Book Appointment</a>
+                <div class="footer-copy">© 2026 Village Vet LLC. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOBILE FOOTER -->
+    <div class="footer-mobile">
+        <div class="footer__logo">Village Vet LLC</div>
+        <div class="footer__tag">Your Pet's Best Friend</div>
+        <nav class="footer__nav">
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="about_us.html">About Us</a>
+        </nav>
+        <div class="footer__copy">© 2026 Village Vet LLC. All rights reserved.</div>
+    </div>
+
+    <script>
+        const btn  = document.getElementById("hamburgerBtn");
+        const menu = document.getElementById("mobileMenu");
+        if (btn && menu) {
+            btn.addEventListener("click", function () {
+                const isOpen = menu.classList.toggle("open");
+                btn.classList.toggle("open", isOpen);
+            });
+            menu.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", () => {
+                    menu.classList.remove("open");
+                    btn.classList.remove("open");
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>

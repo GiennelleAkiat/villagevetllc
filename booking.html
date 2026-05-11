@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/borders.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <title>Village Vet Booking</title>
+</head>
+<body>
+
+<!-- ══════════════════════════════════
+     MOBILE LAYOUT
+══════════════════════════════════ -->
+<div class="mobile-layout">
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const hamburger = document.getElementById("mobileHamburger");
+    const menu = document.getElementById("mobileMenu");
+
+    hamburger.addEventListener("click", () => {
+
+        hamburger.classList.toggle("active");
+        menu.classList.toggle("active");
+
+    });
+
+});
+</script>
+
+
+<!-- ================= MOBILE NAVBAR ================= -->
+<nav class="mobile-navbar">
+
+    <div class="mobile-navbar-top">
+
+        <a href="index.html" class="mobile-logo">
+            <img src="images/village%20vet%20logo.png" alt="Village Vet Logo">
+        </a>
+
+        <button class="mobile-hamburger" id="mobileHamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="about_us.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a target="_blank"
+           href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">
+           Find Us
+        </a>
+        <a href="contact.html#opening_hour">Opening Hours</a>
+
+        <a class="mobile-appointment-btn" href="booking.html">
+            Appointment
+        </a>
+    </div>
+
+</nav>
+
+
+
+
+    <!-- BOOKING FORM -->
+    <section class="booking">
+
+        <div class="booking__hero">
+            <img src="images/birb.jpg" alt="Happy pet" class="booking__hero-img" />
+            <div class="booking__hero-overlay"></div>
+        </div>
+
+        <div class="booking__content">
+            <div class="booking__title-row">
+                <span class="booking__paw">🐾</span>
+                <h1 class="booking__title">Book an Appointment</h1>
+            </div>
+
+            <div class="booking__form">
+
+                <div class="field">
+                    <label class="field__label" for="m_name">Name <span class="req">*</span></label>
+                    <input class="field__input" id="m_name" type="text" placeholder="Type here..." />
+                </div>
+
+                <div class="field-row">
+                    <div class="field">
+                        <label class="field__label" for="m_email">Email <span class="req">*</span></label>
+                        <input class="field__input" id="m_email" type="email" placeholder="Type here..." />
+                    </div>
+                    <div class="field">
+                        <label class="field__label" for="m_phone">Contact Number <span class="req">*</span></label>
+                        <input class="field__input" id="m_phone" type="tel" placeholder="Type here..." />
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="field__label" for="m_service">Service Needed</label>
+                    <div class="select-wrap">
+                        <select class="field__input field__select" id="m_service">
+                            <option value="" disabled selected>Select a service</option>
+                            <option>Vaccination</option>
+                            <option>Microchipping</option>
+                            <option>Consultation</option>
+                            <option>Laboratory Test</option>
+                            <option>Diagnostic Imaging</option>
+                            <option>Dentistry</option>
+                            <option>Surgeries &amp; Orthopedic</option>
+                            <option>Hospitalization &amp; Boarding</option>
+                            <option>Grooming Services</option>
+                            <option>Pet Food &amp; Accessory Shop</option>
+                        </select>
+                        <svg class="select-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="field__label" for="m_message">Message <span class="field__label--opt">(optional)</span></label>
+                    <textarea class="field__input field__textarea" id="m_message" placeholder="Type here..."></textarea>
+                </div>
+
+                <button class="booking__submit" type="button">Book Appointment</button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile footer (inline, no fetch) -->
+    <div class="footer-mobile">
+        <div class="footer__logo">Village Vet LLC</div>
+        <div class="footer__tag">Your Pet's Best Friend</div>
+        <nav class="footer__nav">
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="about_us.html">About Us</a>
+        </nav>
+        <div class="footer__copy">© 2026 Village Vet LLC. All rights reserved.</div>
+    </div>
+
+</div><!-- /.mobile-layout -->
+
+
+<!-- ══════════════════════════════════
+     DESKTOP LAYOUT
+══════════════════════════════════ -->
+<div class="desktop-layout">
+
+    <!-- Desktop navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav_logo">
+            <img src="images/village%20vet%20logo.png" alt="Village Vet Logo">
+        </a>
+        <div>
+            <a href="about_us.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a target="_blank" href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">Find Us</a>
+            <a href="contact.html#opening_hour">Opening Hours</a>
+            <a id="appointment_btn" href="booking.html">Appointment</a>
+        </div>
+    </nav>
+
+    <div class="booking_container_main">
+
+        <!-- LEFT: form -->
+        <div class="booking_container_sub">
+            <h1>🐾 Book an Appointment</h1>
+
+            <form class="booking_form">
+
+                <!-- Name -->
+                <div>
+                    <label for="d_name">Name <span style="color:#e07070">*</span></label>
+                    <input id="d_name" type="text" placeholder="Type here...">
+                </div>
+
+                <!-- Email + Phone -->
+                <div class="booking_row">
+                    <div class="booking_group">
+                        <label for="d_email">Email <span style="color:#e07070">*</span></label>
+                        <input id="d_email" type="email" placeholder="Type here...">
+                    </div>
+                    <div class="booking_group">
+                        <label for="d_phone">Contact Number <span style="color:#e07070">*</span></label>
+                        <input id="d_phone" type="tel" placeholder="Type here...">
+                    </div>
+                </div>
+
+                <!-- Service -->
+                <div>
+                    <label for="d_service">Service Needed</label>
+                    <select id="d_service">
+                        <option value="" disabled selected>Select a service</option>
+                        <option>Vaccination</option>
+                        <option>Microchipping</option>
+                        <option>Consultation</option>
+                        <option>Laboratory Test</option>
+                        <option>Diagnostic Imaging</option>
+                        <option>Dentistry</option>
+                        <option>Surgeries &amp; Orthopedic</option>
+                        <option>Hospitalization &amp; Boarding</option>
+                        <option>Grooming Services</option>
+                        <option>Pet Food &amp; Accessory Shop</option>
+                    </select>
+                </div>
+
+                <!-- Message -->
+                <div>
+                    <label for="d_message">Message <span style="color:#888;font-weight:400">(optional)</span></label>
+                    <textarea id="d_message" placeholder="Type here..."></textarea>
+                </div>
+
+                <button type="submit" id="info_send">Book Appointment</button>
+
+            </form>
+        </div>
+
+        <!-- RIGHT: image -->
+        <div class="booking_container_image">
+            <img src="images/birb.jpg" alt="Happy pet">
+        </div>
+    </div>
+
+    <!-- Desktop footer (inline) -->
+    <div class="footer-desktop">
+        <footer>
+            <div class="foot-container footer-flex">
+                <div class="footer-logo">
+                    <h1>Village Vet LLC</h1>
+                    <span>Your Pet's Best Friend</span>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html#opening_hour">Opening Hours</a></li>
+                </ul>
+                <div class="footer-right">
+                    <a href="contact.html" class="btn-orange">Contact</a>
+                </div>
+            </div>
+        </footer>
+        <div class="bottom-bar">
+            <div class="foot-container bottom-flex">
+                <a href="booking.html" class="btn-orange">Book Appointment</a>
+                <div class="footer-copy">© 2026 Village Vet LLC. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+
+</div><!-- /.desktop-layout -->
+
+
+<script>
+    const btn  = document.getElementById("hamburgerBtn");
+    const menu = document.getElementById("mobileMenu");
+    if (btn && menu) {
+        btn.addEventListener("click", function () {
+            const isOpen = menu.classList.toggle("open");
+            btn.classList.toggle("open", isOpen);
+        });
+        menu.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                menu.classList.remove("open");
+                btn.classList.remove("open");
+            });
+        });
+    }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const params = new URLSearchParams(window.location.search);
+        const service = params.get("service");
+
+        if (service) {
+            ["m_service", "d_service"].forEach(id => {
+                const select = document.getElementById(id);
+                if (!select) return;
+                for (let option of select.options) {
+                    if (option.text === service) {
+                        option.selected = true;
+                        break;
+                    }
+                }
+            });
+        }
+    });
+</script>
+</body>
+</html>

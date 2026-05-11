@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/borders.css">
+
+    <title>Village Vet Contacts</title>
+</head>
+
+<body>
+
+<!-- ==================== MOBILE LAYOUT ==================== -->
+<div class="mobile-layout">
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const hamburger = document.getElementById("mobileHamburger");
+    const menu = document.getElementById("mobileMenu");
+
+    if(hamburger && menu){
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            menu.classList.toggle("active");
+        });
+    }
+
+});
+</script>
+
+<!-- ================= MOBILE NAVBAR ================= -->
+<nav class="mobile-navbar">
+
+    <div class="mobile-navbar-top">
+
+        <a href="index.html" class="mobile-logo">
+            <img src="images/village%20vet%20logo.png" alt="Village Vet Logo">
+        </a>
+
+        <button class="mobile-hamburger" id="mobileHamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="about_us.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a target="_blank"
+           href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">
+           Find Us
+        </a>
+        <a href="contact.html#opening_hour">Opening Hours</a>
+
+        <a class="mobile-appointment-btn" href="booking.html">
+            Appointment
+        </a>
+    </div>
+
+</nav>
+    <!-- HERO -->
+    <div class="contact-hero">
+        <img src="images/cont.jpg" alt="Cute pet" class="contact-hero__img" />
+        <div class="contact-hero__overlay"></div>
+        <h1 class="contact-hero__title"><span>Contact</span> Us</h1>
+    </div>
+
+   <!-- INFO CARDS -->
+<div class="info-section">
+
+    <!-- INQUIRIES -->
+    <div class="info-card info-card--contact">
+
+        <h3 class="info-card__heading">
+            For Any Inquiries
+        </h3>
+
+        <div class="contact-split">
+
+            <!-- PHONE -->
+            <div class="contact-mini-card">
+
+                <div class="contact-icon">📞</div>
+
+                <div class="contact-content">
+                    <span class="contact-label">Call Us</span>
+
+                    <a href="tel:+97172438080">
+                        +971 7 243 8080
+                    </a>
+
+                    <a href="tel:+97172435545">
+                        +971 7 243 5545
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- EMAIL -->
+            <div class="contact-mini-card">
+
+                <div class="contact-icon">✉️</div>
+
+                <div class="contact-content">
+                    <span class="contact-label">Email</span>
+
+                    <a href="mailto:info@villagesvetllc.com">
+                        info@villagesvetllc.com
+                    </a>
+
+                    <a href="mailto:Villagevetllc@yahoo.com">
+                        Villagevetllc@yahoo.com
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- EMERGENCY -->
+    <div class="info-card emergency-mobile">
+
+        <h3 class="info-card__heading">
+            Emergencies
+        </h3>
+
+        <div class="emergency-mobile-box">
+            <span>Available 24/7</span>
+
+            <a href="tel:+971561420787">
+                +971 56 142 0787
+            </a>
+        </div>
+
+    </div>
+
+    <!-- OPENING HOURS -->
+    <div class="info-card">
+
+        <h3 class="info-card__heading">
+            Opening Hours
+        </h3>
+
+        <div class="mobile-hours">
+
+            <div class="mobile-hours-row">
+                <div>
+                    <strong>Saturday – Thursday</strong>
+                </div>
+
+                <div>
+                    9:00 AM – 9:00 PM
+                </div>
+            </div>
+
+            <div class="mobile-hours-row">
+                <div>
+                    <strong>Friday</strong>
+                </div>
+
+                <div>
+                    10:00 AM – 2:00 PM
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- FIND US -->
+    <section class="findus" id="findus">
+        <p class="section-label">Where to find us</p>
+        <h2 class="section-title"><span>Find</span> Us</h2>
+        <div class="divider"></div>
+        <p style="font-size:0.85rem;color:#bbb;line-height:1.6;">
+            Village Vet Veterinary LLC<br>
+            Paris St · Al Jazeera · Qaryat Al Hamra · Ras Al Khaimah
+        </p>
+        <div class="map-wrap">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.676407439452!2d55.77718247519249!3d25.68201947740208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef60bcb90f088f5%3A0xfb307b8802528c97!2sVillage%20Vet%20Veterinary%20LLC!5e0!3m2!1sen!2sae!4v1772922306894!5m2!1sen!2sae"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+</div>
+
+<!-- MOBILE FOOTER -->
+<div class="footer-mobile">
+
+    <div class="footer__logo">
+        Village Vet LLC
+    </div>
+
+    <div class="footer__tag">
+        Your Pet's Best Friend
+    </div>
+
+    <nav class="footer__nav">
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="about_us.html">About Us</a>
+    </nav>
+
+    <div class="footer__copy">
+        © 2026 Village Vet LLC. All rights reserved.
+    </div>
+
+</div>
+
+
+
+<!-- end .mobile-layout -->
+
+
+<!-- ==================== DESKTOP LAYOUT ==================== -->
+
+<!-- DESKTOP NAVBAR -->
+<nav class="navbar">
+    <a href="index.html" class="nav_logo">
+        <img src="images/village%20vet%20logo.png" alt="Village Vet Logo">
+    </a>
+
+    <div>
+        <a href="about_us.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+
+        <a target="_blank"
+           href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">
+           Find Us
+        </a>
+
+        <a href="contact.html#opening_hour">
+            Opening Hours
+        </a>
+
+        <a id="appointment_btn" href="booking.html">
+            Appointment
+        </a>
+    </div>
+</nav>
+<div class="desktop-layout">
+
+    <!-- NAV (injected by load_foot_nav.js) -->
+    <nav id="desktop-navbar"></nav>
+
+    <div class="c_hero_banner">
+        <img src="images/cont.jpg">
+        <div class="c_hero_overlay">
+            <h2>CONTACT <span class="recolor_seethur">US</span></h2>
+        </div>
+    </div>
+
+    <div class="contact_colored" id="opening_hour">
+        <div class="contact_section">
+            <!-- top -->
+            <div class="contact_top">
+                <div class="inquiries_box">
+                    <h2>For Any Inquiries</h2>
+                    <div class="info_cards">
+                        <div class="info_card">
+                            <span>📞</span>
+                            <div>
+                                <p>+971 7 243 8080</p>
+                                <p>+971 7 243 5545</p>
+                            </div>
+                        </div>
+                        <div class="info_card">
+                            <span>✉️</span>
+                            <div>
+                                <a href="mailto:info@villagesvetllc.com" target="no_target"><p>info@villagesvetllc.com</p></a>
+                                <a href="mailto:Villagevetllc@yahoo.com" target="no_target"><p>Villagevetllc@yahoo.com</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right -->
+                <div class="emergency_box">
+                    <h2>Emergencies</h2>
+                    <div class="emergency_card">
+                        <h3>Available 24/7</h3>
+                        <p>+971 56 142 0787</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- bottom -->
+            <div class="hours_box">
+                <h2>Opening Hours</h2>
+                <div class="hours_cards">
+                    <div class="hour_card">
+                        <h3>Saturday – Thursday</h3>
+                        <p>9:00 AM – 9:00 PM</p>
+                    </div>
+                    <div class="hour_card">
+                        <h3>Friday</h3>
+                        <p>10:00 AM – 2:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAP / FIND US -->
+    <div class="map">
+        <div class="map_overlay">
+            <div>
+                <h3>FIND <span class="recolor_seethur">US</span></h3>
+                <h2>Village Vet Veterinary LLC</h2>
+                <p>Paris St - Al Jazeera - Qaryat Al Hamra · Ras Al Khaimah</p>
+            </div>
+            <a class="map_btn" target="_blank" href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">Open in Google Maps</a>
+        </div>
+
+        <iframe
+            width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.676407439452!2d55.77718247519249!3d25.68201947740208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef60bcb90f088f5%3A0xfb307b8802528c97!2sVillage%20Vet%20Veterinary%20LLC!5e0!3m2!1sen!2sae!4v1775418853740!5m2!1sen!2sae">
+        </iframe>
+
+    </div>
+
+
+
+</div>
+
+<!-- DESKTOP FOOTER -->
+<div class="footer-desktop">
+
+    <footer>
+
+        <div class="foot-container footer-flex">
+
+            <div class="footer-logo">
+                <h1>Village Vet LLC</h1>
+                <span>Your Pet's Best Friend</span>
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="about_us.html">About Us</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li>
+                    <a href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">
+                        Find Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html#opening_hour">
+                        Opening Hours
+                    </a>
+                </li>
+            </ul>
+
+            <div class="footer-right">
+
+                <div class="lang-switcher">
+
+                    <button class="lang-btn">
+                        <img src="https://flagcdn.com/w20/gb.png" alt="English">
+                        <span>EN</span>
+                    </button>
+
+                    <ul class="lang-dropdown">
+                        <li>
+                            <a href="#">
+                                <img src="https://flagcdn.com/w20/ae.png" alt="Arabic">
+                                Arabic (AR)
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <a href="contact.html" class="btn-orange">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="bottom-bar">
+
+        <div class="foot-container bottom-flex">
+
+            <a href="booking.html" class="btn-orange">
+                Book Appointment
+            </a>
+
+            <div class="footer-copy">
+                © 2026 Village Vet LLC. All rights reserved.
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- end .desktop-layout -->
+
+
+<!-- Hamburger script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const btn  = document.getElementById("hamburgerBtn");
+        const menu = document.getElementById("mobileMenu");
+        if (btn && menu) {
+            btn.addEventListener("click", function () {
+                const isOpen = menu.classList.toggle("open");
+                btn.classList.toggle("open", isOpen);
+                btn.setAttribute("aria-expanded", isOpen);
+            });
+            menu.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    menu.classList.remove("open");
+                    btn.classList.remove("open");
+                    btn.setAttribute("aria-expanded", false);
+                });
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
