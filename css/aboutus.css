@@ -7,7 +7,7 @@
 .meet_team {
     padding: 120px 50px 100px;
     background: linear-gradient(rgba(0,0,0,0.55), rgba(0, 0, 0, 0.737)),
-                url('images/gal1.webp') center/cover no-repeat;
+                url('../images/Village Vet Gallery Pictures/front_1.webp') center/cover no-repeat;
     color: white;
 }
 
