@@ -295,5 +295,109 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 </script>
+
+<!-- To Backend -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const apiUrl = 'https://accompany-goldsmith-unpledged.ngrok-free.dev/api/bookings';
+        const desktopForm = document.querySelector('.booking_form');
+        const mobileSubmitButton = document.querySelector('.booking__submit');
+        const desktopSubmitButton = document.getElementById('info_send');
+
+        const fieldMap = {
+            mobile: {
+                name: 'm_name',
+                email: 'm_email',
+                contactNo: 'm_phone',
+                service: 'm_service',
+                message: 'm_message'
+            },
+            desktop: {
+                name: 'd_name',
+                email: 'd_email',
+                contactNo: 'd_phone',
+                service: 'd_service',
+                message: 'd_message'
+            }
+        };
+
+        const getPayload = source => {
+            const ids = fieldMap[source];
+            return {
+                name: document.getElementById(ids.name)?.value.trim() || '',
+                email: document.getElementById(ids.email)?.value.trim() || '',
+                contactNo: document.getElementById(ids.contactNo)?.value.trim() || '',
+                service: document.getElementById(ids.service)?.value || '',
+                message: document.getElementById(ids.message)?.value.trim() || ''
+            };
+        };
+
+        const clearFields = source => {
+            const ids = fieldMap[source];
+            Object.values(ids).forEach(id => {
+                const field = document.getElementById(id);
+                if (!field) return;
+
+                if (field.tagName === 'SELECT') {
+                    field.selectedIndex = 0;
+                } else {
+                    field.value = '';
+                }
+            });
+        };
+
+        const submitBooking = async (event, source) => {
+            event.preventDefault();
+
+            const submitBtn = source === 'mobile'
+                ? mobileSubmitButton
+                : desktopSubmitButton || event.submitter || event.currentTarget.querySelector('button[type="submit"]');
+
+            if (submitBtn) {
+                submitBtn.innerText = 'Submitting...';
+                submitBtn.disabled = true;
+            }
+
+            const payload = getPayload(source);
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'ngrok-skip-browser-warning': '69420'
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    alert('Success! Your appointment request has been sent. We will email you once it is confirmed.');
+                    clearFields(source);
+                } else {
+                    alert(`Error: ${result.message || 'Unable to submit your booking.'}`);
+                }
+            } catch (error) {
+                console.error('Fetch error:', error);
+                alert('Failed to connect to the server. Is the backend running?');
+            } finally {
+                if (submitBtn) {
+                    submitBtn.innerText = 'Book Appointment';
+                    submitBtn.disabled = false;
+                }
+            }
+        };
+
+        if (desktopForm) {
+            desktopForm.addEventListener('submit', e => submitBooking(e, 'desktop'));
+        }
+
+        if (mobileSubmitButton) {
+            mobileSubmitButton.addEventListener('click', e => submitBooking(e, 'mobile'));
+        }
+    });
+</script>
+
 </body>
 </html>
