@@ -88,13 +88,14 @@ a { text-decoration: none; color: inherit; }
   inset: 0;
   background: #00000085;
 }
-.hero__inner    { position: relative; z-index: 1; color: #fff; }
-.hero__logo     { font-family: 'Playfair Display', serif; font-size: 2rem; }
-.hero__tag      { font-size: 0.85rem; letter-spacing: 0.2em; text-transform: uppercase; color: #ddd; margin-top: 4px; }
-.hero__title    { font-family: 'Playfair Display', serif; font-size: 2.4rem; line-height: 1.2; margin: 28px 0 16px; }
-.hero__subtitle { font-size: 1rem; color: #ddd; max-width: 280px; margin: 0 auto 32px; line-height: 1.6; }
+.hero__inner    { animation: fade-up 0.5s linear; position: relative; z-index: 1; color: #fff; }
+.hero__logo     { animation: fade-up 0.6s linear; font-family: 'Playfair Display', serif; font-size: 2rem; }
+.hero__tag      { animation: fade-up 0.7s linear; font-size: 0.85rem; letter-spacing: 0.2em; text-transform: uppercase; color: #ddd; margin-top: 4px; }
+.hero__title    { animation: fade-up 0.8s linear; font-family: 'Playfair Display', serif; font-size: 2.4rem; line-height: 1.2; margin: 28px 0 16px; }
+.hero__subtitle { animation: fade-up 0.9s linear; font-size: 1rem; color: #ddd; max-width: 280px; margin: 0 auto 32px; line-height: 1.6; }
 
 .btn {
+  animation: fade-up 1s linear;
   display: inline-block;
   padding: 14px 36px;
   background: var(--green);
@@ -117,7 +118,7 @@ section { padding: 56px 20px; }
 .divider { width: 48px; height: 3px; background: var(--gold); margin: 14px 0 32px; }
 
 /* SERVICES */
-.services-list { animation: fade-up 0.5s linear; display: flex; flex-direction: column; gap: 10px; }
+.services-list { animation: slide-in 0.5s linear; display: flex; flex-direction: column; gap: 10px; }
 .service-bar {
   display: flex;
   align-items: center;
@@ -199,6 +200,7 @@ section { padding: 56px 20px; }
   .under_navbar a:hover {
     transition: all 300ms ease-in-out;
     color: rgb(250, 138, 12);
+    transform: translateY(-5px);
   }
 
   .under_navbar a img {
@@ -254,12 +256,14 @@ section { padding: 56px 20px; }
   }
 
   .hero_overlay h2 {
+    animation: fade-up 0.3s linear;
     font-size: 4rem;
     max-width: 500px;
     line-height: 1.1;
   }
 
   .hero_overlay p {
+    animation: fade-up 0.4s linear;
     font-size: 1.1rem;
     max-width: 500px;
     margin-top: 12px;
@@ -287,14 +291,17 @@ section { padding: 56px 20px; }
 
   .hero_button a:hover {
     opacity: 0.85;
+    transform: translateY(-5px);
   }
 
   .hero_btn1 {
+    animation: fade-up 0.5s linear;
     background-color: #fa8a0c;
     color: #fff;
   }
 
   .hero_btn2 {
+    animation: fade-up 0.6s linear;
     background-color: #fff;
     color: #000;
   }
@@ -933,7 +940,7 @@ a.service_content:hover {
         transition: 0.25s ease;
     }
 
-    .navbar a:hover { color: #FA8A0C; }
+    .navbar a:hover { transform: translateY(-5px); color: #FA8A0C; }
 
     .nav_logo img { height: 65px; width: auto; }
 

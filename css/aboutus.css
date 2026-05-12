@@ -104,6 +104,11 @@
         border: #1f1f1f;
         margin: 1em;
         position: relative;
+        transition: transform 0.2s;
+    }
+
+    .doc_card:hover {
+        transform: translateY(-15px);
     }
 
     .doc_card img {
@@ -146,6 +151,11 @@
         margin: 1em;
         position: relative;
         overflow: hidden;
+        transition: transform 0.2s;
+    }
+
+    .nurse_card:hover {
+        transform: translateY(-15px);
     }
 
     .nurse_card_desc {
@@ -905,7 +915,7 @@
         transition: 0.25s ease;
     }
 
-    .navbar a:hover { color: #FA8A0C; }
+    .navbar a:hover { transform: translateY(-5px); color: #FA8A0C; }
 
     .nav_logo img { height: 65px; width: auto; }
 

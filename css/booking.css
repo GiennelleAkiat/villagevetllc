@@ -172,7 +172,7 @@ a { text-decoration: none; color: inherit; }
 @media (min-width: 1024px) {
 
   .booking_container_main {
-    /*padding-top: 100px;*/
+    padding-top: 100px;
     min-height: 100vh;
     display: flex;
     flex-direction: row;
@@ -651,7 +651,7 @@ a { text-decoration: none; color: inherit; }
         transition: 0.25s ease;
     }
 
-    .navbar a:hover { color: #FA8A0C; }
+    .navbar a:hover { transform: translateY(-5px); color: #FA8A0C; }
 
     .nav_logo img { height: 65px; width: auto; }
 

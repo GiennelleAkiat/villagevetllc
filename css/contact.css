@@ -971,7 +971,7 @@ section { padding: 56px 20px; }
         transition: 0.25s ease;
     }
 
-    .navbar a:hover { color: #FA8A0C; }
+    .navbar a:hover { transform: translateY(-5px); color: #FA8A0C; }
 
     .nav_logo img { height: 65px; width: auto; }
 

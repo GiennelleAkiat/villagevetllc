@@ -272,7 +272,7 @@ body {
         padding: 0;
     }
 
-    .navbar div a:hover { color: #FA8A0C; }
+    .navbar div a:hover { transform: translateY(-5px); color: #FA8A0C; }
 
     #appointment_btn {
         color: white;
@@ -293,6 +293,8 @@ body {
     }
 
     .m_service_content { gap: 67px; }
+    .m_service_content a {transition: transform 0.1s;}
+    .m_service_content a:hover {transform: translateY(-10px);}
     .m_service_content h1 { font-size: 2.2rem; }
 
     .m_IwIllGoCrAzY {
