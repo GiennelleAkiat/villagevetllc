@@ -11,64 +11,64 @@
 <link rel="stylesheet" href="css/borders.css">
 <link rel="stylesheet" href="css/homepage.css">
 <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/borders.css">
 
 </head>
 <body>
 
-  <!-- ==================== MOBILE VERSION ==================== -->
 
 <div class="mobile-layout">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.getElementById("mobileHamburger");
+            const menu = document.getElementById("mobileMenu");
 
-    const hamburger = document.getElementById("mobileHamburger");
-    const menu = document.getElementById("mobileMenu");
+            hamburger.addEventListener("click", () => {
 
-    hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                menu.classList.toggle("active");
 
-        hamburger.classList.toggle("active");
-        menu.classList.toggle("active");
+            });
 
-    });
-
-});
-</script>
+        });
+    </script>
 
 
-<!-- ================= MOBILE NAVBAR ================= -->
-<nav class="mobile-navbar">
+    <!-- ================= MOBILE NAVBAR ================= -->
+    <nav class="mobile-navbar">
 
-    <div class="mobile-navbar-top">
+        <div class="mobile-navbar-top">
 
-        <a href="index.html" class="mobile-logo">
-            <img src="images/village%20vet%20logo.png" alt="Village Vet Logo">
-        </a>
+            <a href="index.html" class="mobile-logo">
+                <img src="images/village%20vet%20logo.png" alt="Village Vet Logo">
+            </a>
 
-        <button class="mobile-hamburger" id="mobileHamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+            <button class="mobile-hamburger" id="mobileHamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-    </div>
+        </div>
 
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="about_us.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-        <a target="_blank"
-           href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">
-           Find Us
-        </a>
-        <a href="contact.html#opening_hour">Opening Hours</a>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="about_us.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a target="_blank"
+               href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">
+                Find Us
+            </a>
+            <a href="contact.html#opening_hour">Opening Hours</a>
 
-        <a class="mobile-appointment-btn" href="booking.html">
-            Appointment
-        </a>
-    </div>
+            <a class="mobile-appointment-btn" href="booking.html">
+                Appointment
+            </a>
+        </div>
 
-</nav>
+    </nav>
+
 
 
 
@@ -190,51 +190,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   <!-- ==================== DESKTOP VERSION ==================== -->
-  <div class="desktop-layout">
+<div class="desktop-layout">
 
-    <!-- NAV (injected by load_foot_nav.js) -->
-<!--    <nav id="desktop-navbar"></nav>-->
-<nav class="navbar">
-    <a href="index.html" class="nav_logo">
-        <img src="images/village%20vet%20logo.png" alt="Village Vet Logo">
-    </a>
-
-    <div>
-        <a href="about_us.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-
-        <a target="_blank"
-           href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">
-           Find Us
+    <!-- DESKTOP NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="nav_logo">
+            <img src="images/village%20vet%20logo.png" alt="Village Vet Logo">
         </a>
 
-        <a href="contact.html#opening_hour">
-            Opening Hours
-        </a>
+        <div>
+            <a href="about_us.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
 
-        <a id="appointment_btn" href="booking.html">
-            Appointment
-        </a>
-    </div>
-</nav>
+            <a target="_blank"
+               href="https://www.google.com/maps/place/Village+Vet+Veterinary+LLC/@25.6820195,55.7797574,17z">
+                Find Us
+            </a>
 
-    <!-- UNDER NAVBAR -->
-    <div class="under_navbar">
-      <div>
-        <a href="contact.html">Contact Us</a>
-        <a href="contact.html"><img src="icons/Icon_Msg.png" alt="Message"></a>
-        <a href="contact.html"><img src="icons/Icon_Call.png" alt="Call"></a>
-        <a href="https://api.whatsapp.com/send/?phone=971561420787&text&type=phone_number&app_absent=0" target="_blank"><img src="icons/Icon_whatsapp.png" alt="WhatsApp"></a>
-      </div>
-      <div>
-        <a href="https://www.facebook.com/people/Village-Vet-LLC/100063618232072/" target="_blank"><img src="icons/Icon_facebook.png" alt="Facebook"></a>
-        <a href="https://x.com/LlcVet" target="_blank"><img src="icons/Icon_twitter.png" alt="Twitter"></a>
-        <a href="https://www.linkedin.com/in/village-vet-llc-uae-9a5b27188/" target="_blank"><img src="icons/Icon_linkedin.png" alt="LinkedIn"></a>
-        <a href="https://www.youtube.com/@villagevetllc4652" target="_blank"><img src="icons/Icon_youtube.png" alt="YouTube"></a>
-        <a href="https://www.instagram.com/village_vet_llc/" target="_blank"><img src="icons/Icon_insta.png" alt="Instagram"></a>
-      </div>
-    </div>
+            <a href="contact.html#opening_hour">
+                Opening Hours
+            </a>
+
+            <a id="appointment_btn" href="booking.html">
+                Appointment
+            </a>
+        </div>
+    </nav>
+
 
     <!-- HERO -->
     <div class="hero_banner">
