@@ -2,6 +2,27 @@
    homepage.css — MOBILE ONLY
    ============================================================ */
 
+@keyframes fade-up {
+    0% {
+        opacity:0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100% {
+        opacity:1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
 @media (max-width: 1023px) {
 
   section { padding: 56px 20px; }
@@ -96,7 +117,7 @@ section { padding: 56px 20px; }
 .divider { width: 48px; height: 3px; background: var(--gold); margin: 14px 0 32px; }
 
 /* SERVICES */
-.services-list { display: flex; flex-direction: column; gap: 10px; }
+.services-list { animation: fade-up 0.5s linear; display: flex; flex-direction: column; gap: 10px; }
 .service-bar {
   display: flex;
   align-items: center;
